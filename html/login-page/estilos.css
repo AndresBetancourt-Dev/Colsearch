@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url(ciudad-login.jpg);
+    background-size: 100% 100%;
+}
+
+.overlay {
+    background: rgba(37, 39, 41, 0.7);
+    height: 100vh;
+}
+
+.overlay-form {
+    background: rgba(14, 13, 13, 0.7);
+}
+
+.color {
+    background-color: rgba(8, 8, 8, 0.7);
+}
