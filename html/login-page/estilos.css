@@ -16,3 +16,12 @@ body {
 .color {
     background-color: rgba(8, 8, 8, 0.7);
 }
+
+.forgot-link {
+    color: white;
+}
+
+.forgot-link:hover {
+    text-decoration: none;
+    color: rgb(204, 181, 181);
+}
