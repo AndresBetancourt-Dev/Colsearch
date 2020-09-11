@@ -3,25 +3,100 @@
     <head>
         <meta charset="utf-8">
         <title>Colsearch - Administration</title>
-        <link rel="stylesheet" href="estilos.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="estilos.css">
     </head>
 
     <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7 border border-light p-4" style="height: 100vh;">
-                    <img class="rounded" src="logo.png" style="width: 20%; height: 20%;">
-                    <button type="button" class="btn btn-light w-100 m-2 py-4">Validar persona desaparecida</button>
-                    <button type="button" class="btn btn-light w-100 m-2 py-4">Gestion de Usuarios</button>
 
-                    <img src="graficas1.jpg" style="width: 40%; height: 40%; border: 3px solid #;">
-                    <img src="grafica2.jpg" style="width: 40%; height: 40%; border: 3px solid #930;">
+        <!--navegador-->
+
+        <nav class="navbar navbar-expand-md navbar-light" style="height: 8vh; background: black;">
+            <div class="container">
+                <a href="#" class="btn btn-outline-info text-light font-weight-bold rounded px-5 disabled">
+                    ColSearch
+                </a>
+                <h5 class="border-bottom border-warning" style="color: lightslategrey">Administrator</h5>
+            </div>
+        </nav>
+
+        <!--tablas, modales y validación-->
+
+        <div class="container" style="height: 86vh;">
+            <div class="row">
+                <div class="col-md-6 p-4">
+
+                    <!--modales-->
+
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content" style="height: 70vh;">
+                                <img src="images/graficas1.jpg" style="height: 70vh;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade bd-example-modal-lg modal2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content" style="height: 70vh;">
+                                <img src="images/grafica2.png" style="height: 70vh;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade bd-example-modal-lg modal3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content" style="height: 70vh;">
+                                <img src="images/grafica3.png" style="height: 70vh;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--tabla 1-->
+                    <div class="row-md-4 mb-2 mx-3 tabla">
+                        <div class="d-flex bg-dark p-1">
+                            <h5 class="bg-dark text-light m-0 px-3" style="width: 85%;">Desaparecidos por Año</h5>
+                            <a href="gestion.html" class="btn btn-info rounded btn-sm">gestionar</a>
+                        </div>
+                        <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><img src="images/graficas1.jpg"></a>
+                    </div>
+
+                    <!--tabla 2-->
+                    <div class="row-md-4 mb-2 mx-3 tabla">
+                        <div class="d-flex bg-dark p-1">
+                            <h5 class="bg-dark text-light m-0 px-3" style="width: 85%;">Desaparecidos por Cedula</h5>
+                            <a href="gestion.html" class="btn btn-info rounded btn-sm">gestionar</a>
+                        </div>
+                        <a href="#" data-toggle="modal" data-target=".modal2"><img src="images/grafica2.png"></a>
+                    </div>
+
+                    <!--tabla 3-->
+                    <div class="row-md-4 mx-3 tabla">
+                        <div class="d-flex bg-dark p-1">
+                            <h5 class="bg-dark text-light m-0 px-3" style="width: 85%;">Desaparecidos por Genero</h5>
+                            <a href="gestion.html" class="btn btn-info rounded btn-sm">gestionar</a>
+                        </div>
+                        <a href="#" data-toggle="modal" data-target=".modal3"><img src="images/grafica3.png"></a>
+                    </div>
                 </div>
-                <div class="col-md-5 border border-light" style="height: 100vh;">
-                    <h1>hola bootstrap</h1>
+
+            <!--ventana de validación-->
+
+                <div class="col-md-6 p-4" style="opacity: .9">
+                    <div class="rounded p-4 text-center" style="height: 80vh; background: black;">
+                        <iframe class="scroll w-100" src="personas.html"></iframe>
+                        <button class="btn-info rounded p-2 m-2 w-25">Validar</button>
+                        <button class="btn-dark rounded p-2 m-2 w-25">Borrar</button>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!--pie de página-->
+        <footer class="d-flex justify-content-center align-items-center"style="background: black; height: 6vh;">
+            <h5 style="color:lightslategrey; font-size:small">Colsearch @2020</h5>
+        </footer>
     </body>
 </html>
