@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap');
 
 html{
@@ -11,7 +11,7 @@ body{
 
 *{
     scroll-behavior: smooth;
-    transition: 2s;
+    transition: 1.5s;
 }
 
 /*FONTS*/
@@ -24,10 +24,10 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
-/*HEAD*/
+/*HEADER*/
 
 .content-head{
-    background: url('https://images.pexels.com/photos/929668/pexels-photo-929668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background: url('../images/main-background.jpg');
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -45,6 +45,8 @@ body{
     transform: scale(1.2,1.2);
     transition: 2s;
 }
+
+/*HERO*/
 
 .hero{
     width: 100%;
@@ -77,6 +79,8 @@ body{
 .hero-text{
     font-weight: 300;
 }
+
+/*ABOUT*/
 
 .about{
     width: 100%;
@@ -181,6 +185,32 @@ body{
     animation: react 3s linear infinite;
 }
 
+
+/*FOOTER*/
+
+.footer{
+    background: linear-gradient(to top, rgba(0,0,0,1),#111);
+    width: 100%;
+    min-height: 50vh;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.footer-text,.footer-entities,.footer-contact{
+    display: grid ;
+    justify-items: center ;
+    align-items: center ;
+}
+
+.footer-contact ul li{
+    font-weight: 100;
+}
+
+
+
+/*RESPONSIVE*/
 @media screen and (min-width: 800px){
     .about-text{
         font-size: .95rem;
@@ -230,6 +260,10 @@ body{
 
     .about-text{
         font-size: 3vw;
+    }
+
+    .content-head{
+        background: url('../images/main-background-responsive.jpeg');
     }
 }
 

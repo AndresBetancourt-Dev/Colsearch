@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap');
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    transition: 1.5s;
+}
+
+*{
+    scroll-behavior: smooth;
+    transition: 1.5s;
+}
+
+/*FONTS*/
+
+.font-poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    background: linear-gradient(to bottom, rgba(0,0,0,.25), rgba(0,0,0,.125));
+    position: fixed;
+    z-index: 5;
+}
+
+
+.navbar-brand:hover, .nav-item:hover{
+    transform: scale(1.2,1.2);
+    transition: 2s;
+}
+    
+    .body{
+      margin: 0;
+      width: 100%;
+      
+    }
+
+      .transparente{
+         opacity: 0.8;
+        -moz-opacity: 0.8;
+        filter: alpha(opacity=80);
+        -khtml-opacity: 0.8;
+      }
+
+      .bg-dark{
+        position: fixed;
+        z-index: 20;
+        width: 100%;
+      }
+
+      .register{
+      min-height: 100vh;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      align-items: center;
+      justify-items: center;
+      background-image: url('../images/register-background.jpeg');
+      background-size: 100% 150%;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 60px 0px;
+      }
+    
+
+      .register-item{
+        width: 75%;
+        height: 70%;
+        
+      }
+
+      .register-item img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+
+      .register-form{
+        background: linear-gradient(to top, rgba(0,0,0,1),#111);
+        border-radius: 10px;
+      }
+
+.footer{
+    background: linear-gradient(to top, rgba(0,0,0,1),#111);
+    width: 100%;
+    min-height: 50vh;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.footer-text,.footer-entities,.footer-contact{
+    display: grid ;
+    justify-items: center ;
+    align-items: center ;
+}
+
+.footer-contact ul li{
+    font-weight: 100;
+}
+
+
+      @media screen and (max-width: 768px){
+
+    .bg-dark{
+        background-color: transparent!important;
+    }
+
+    .register{
+      grid-template-columns: 1fr;
+    }
+
+    .register-form{
+      margin-bottom: 100px;
+    }
+
+    .register-item:nth-last-child(){
+        width: 75%;
+        height: 100%;
+        min-height: 300px;
+        min-width: 300px;
+      }
+
+      .register-item img{
+        width: 100%;
+        min-height: 250px;
+        height: 100%;
+      }
+
+    
+    .register{
+      background: url('../images/register-background-responsive.jpeg');
+    }
+
+}
+
+.overlay-form {
+    background: rgba(14, 13, 13, 0.7);
+}
+
+.form-title{
+  font-weight: 700;
+}
+
+.register-input{
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.btn-light{
+  font-weight: 700;
+}
+    
+
+.color {
+    background-color: rgba(8, 8, 8, 0.7);
+}
+
+      

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap');
+
+
+
+.font-poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 1.5s;
+    font-family: 'Poppins',sans-serif;
+    background-color: black;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+#map{
+    min-height: 100vh;
+    min-width: 100vw;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    
+}
+
+*{
+    scroll-behavior: smooth;
+    transition: 1.5s;
+}
+
+/*FONTS*/
+
+
+.font-lato{
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+.header{
+    background: linear-gradient(to bottom, rgba(0,0,0,.25), rgba(0,0,0,.125));
+    
+}
+
+
+.navbar-brand:hover, .nav-item:hover{
+    transform: scale(1.2,1.2);
+    transition: 2s;
+}
+
+.footer{
+    background: linear-gradient(to top, rgba(0,0,0,1),#111);
+    width: 100%;
+    min-height: 50vh;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.footer-text,.footer-entities,.footer-contact{
+    display: grid ;
+    justify-items: center ;
+    align-items: center ;
+}
+
+.footer-contact ul li{
+    font-weight: 100;
+}

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap');
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    transition: 1.5s;
+}
+
+*{
+    scroll-behavior: smooth;
+    transition: 1.5s;
+}
+
+/*FONTS*/
+
+.font-poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-lato{
+    font-family: 'Lato', sans-serif;
+}
+
+.form-title{
+    transition: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('../images/city-background.jpeg');
+    background-size: 100% 100%;
+}
+
+.overlay {
+    background: rgba(37, 39, 41, 0.7);
+    height: 100vh;
+}
+
+.overlay-form {
+    background: rgba(14, 13, 13, 0.7);
+}
+
+.color {
+    background-color: rgba(8, 8, 8, 0.7);
+}
+
+.login-form{
+   
+    width: 30%;
+    height: 50%;
+    
+}
+
+.login-input{
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: none;
+}
+
+.login-button{
+    border: none;
+}
+
+@media screen and (max-width: 768px){
+    .login-form{
+        min-width: 300px;
+        width: 80%;
+        min-height: 400px;
+    }
+
+    body{
+        background: url('../images/city-background-responsive.jpeg');
+        background-position: center;
+    }
+}
