@@ -8,62 +8,96 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title></title>
+    <title>REGISTRO</title>
 
     <style>
     
     .body{
-      background: black;
+      width: 100%;
+      height: 80vh;
+      background-image: url(/imagen/ciudad-4-810x540.jpg);
+      background-size: 100% 150%;
+      background-repeat: no-repeat;
     }
-      
+
+      .transparente{
+         opacity: 0.8;
+        -moz-opacity: 0.8;
+        filter: alpha(opacity=80);
+        -khtml-opacity: 0.8;
+      }
+
+      .bg-dark{
+        position: fixed;
+        z-index: 20;
+        width: 100%;
+      }
+
+      .body:before{
+        content: '';
+        width: 100%;
+        height: 110vh;
+        position: absolute;
+        top:0;
+        left: 0;
+        background-image: linear-gradient(rgba(194, 51, 51, 0.1), rgb(3, 3, 3));
+}
+
+      @media (min-width: 768px){
+    .bg-dark{
+        background-color: transparent!important;
+    }
+
+
+
+}
     
-
-
-
+      
     </style>
   </head>
+
   <body class="body">
-    <header class="header">
-    <div class="container-header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top  bg-dark ">
-      <div class="container  ">
-        <a class="navbar-brand text-light" href="#">LOGO</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto ">
-          <a class="nav-item nav-link text-light" href="#header">Inicio</a>
-          <a class="nav-item nav-link text-light" href="#info-one">About</a>
-          <a class="nav-item nav-link text-light" href="#contact">Contact</a>
+      <header class="header">
+        <div class="bg-dark ">
+        <div class="container-header">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top  bg-dark ">
+        <div class="container  ">
+          <a class="navbar-brand text-light" href="#">REGISTRA A LA PERSONA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto ">
+            <a class="nav-item nav-link text-light" href="#header">Home</a>
+            <a class="nav-item nav-link text-light" href="#info-one">Ayuda</a>
+            <a class="nav-item nav-link text-light" href="#contact">Contactos</a>
+           </div>
+          </div>
         </div>
-      </div>
-      </div>
-    </nav>
-  </div>
-</header>
+       </nav>
+     </div>
+    </div>
+    </header>
+  
 
-<section id="header">
-
-  <div class="container-fluid mt-5 p-0" >
-    <div class="row">
+  <div class="container" >
+    <class class="row">
       <div class="col-md-6 col-sm-6" style="height: 100vh;">
         <div class="header-content-left">
-          <div class="" >
-          <img src="imagen/ciudad-4-810x540.jpg" style="width: 100% 100%;">
-        </div>  
+        
       </div>
     </div>
-      <div class="col-md-6 col-sm-6">
-        <div class="header-content-right">
-          <form class="card " style="background: dimgray;">
+ 
+      <div class="col-md-6 col-sm-6 " style="padding: 75px; d-flex justify-content-center">
+        <div class="header-content-right ">
+          <form class="transparente ">
             <div class="card-body">
               <div class="form-group">
                 <h1 class="text-center text-light">REGISTRO</h1>
                 <div class="d-flex justify-content-center">
-                  <img src="/imagen/istockphoto-1128478517-1024x1024.jpg" alt="" style="width: 200px;">
+                  <img src="/imagen/subir.jpg" alt="" style="width: 200px;">
                 </div>
-                <input  type="text " class="form-control mt-4" placeholder="Name">
+                <input  type="text " class="form-control mt-4" placeholder="Nombre">
               </div>
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Identificacion">
@@ -75,16 +109,18 @@
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="UBICACION">
               </div>
-              <button class="btn btn-outline-primary btn-block btn-light">
-                Send
+              <button class="btn btn-outline-primary btn-block btn-light" style="background-color: chartreuse;">
+                Enviar
               </button>
             </div>
           </form>
         </div>
       </div>
-    </div>
+    </class>
   </div>
-</section>
+
+
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
