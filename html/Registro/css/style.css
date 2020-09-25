@@ -84,6 +84,8 @@ body{
         border-radius: 10px;
       }
 
+/*FOOTER*/
+
 .footer{
     background: linear-gradient(to top, rgba(0,0,0,1),#111);
     width: 100%;
@@ -105,7 +107,27 @@ body{
 }
 
 
-      @media screen and (max-width: 768px){
+
+.footer-entities-grid{
+  display: grid;
+  grid-template-columns: .20fr .4fr .35fr;
+  grid-gap: 20px;
+}
+
+.footer-entity{
+  width: 100%;
+  height: 100%;
+}
+
+.footer-entity img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+@media screen and (max-width: 768px){
 
     .bg-dark{
         background-color: transparent!important;
@@ -139,31 +161,32 @@ body{
 
 }
 
+/*EDITS*/
+      
+
 .overlay-form {
-    background: rgba(14, 13, 13, 0.7);
+  background: rgba(14, 13, 13, 0.7);
 }
 
 .form-title{
-  font-weight: 700;
+font-weight: 700;
 }
 
 .register-input{
-  background: none;
-  border: none;
-  border-bottom: 2px solid white;
-  color: white;
-  width: 100%;
-  text-align: center;
-  
+background: none;
+border: none;
+border-bottom: 2px solid white;
+color: white;
+width: 100%;
+text-align: center;
+
 }
 
 .btn-light{
-  font-weight: 700;
+font-weight: 700;
 }
-    
+  
 
 .color {
-    background-color: rgba(8, 8, 8, 0.7);
+  background-color: rgba(8, 8, 8, 0.7);
 }
-
-      

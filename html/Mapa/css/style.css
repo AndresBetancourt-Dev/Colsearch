@@ -52,6 +52,7 @@ body{
 }
 
 
+/*HEADER*/
 
 .header{
     background: linear-gradient(to bottom, rgba(0,0,0,.25), rgba(0,0,0,.125));
@@ -63,6 +64,8 @@ body{
     transform: scale(1.2,1.2);
     transition: 2s;
 }
+
+/*FOOTER*/
 
 .footer{
     background: linear-gradient(to top, rgba(0,0,0,1),#111);
@@ -82,4 +85,20 @@ body{
 
 .footer-contact ul li{
     font-weight: 100;
+}
+
+.footer-entities-grid{
+    display: grid;
+    grid-template-columns: .20fr .4fr .35fr;
+    grid-gap: 20px;
+}
+
+.footer-entity{
+    width: 100%;
+    height: 100%;
+}
+
+.footer-entity img{
+    width: 100%;
+    height: 100%;
 }
