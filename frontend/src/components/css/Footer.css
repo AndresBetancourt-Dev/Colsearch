@@ -1,105 +1,39 @@
+/*Footer*/
 
-
-/*FOOTER*/
-
-.footer{
-    background: linear-gradient(to top, rgba(0,0,0,1),#111);
-    width: 100%;
-    min-height: 50vh;
-    height: 100%;
-    display: grid;
-    align-items: center;
-    justify-items: center;
+.footer {
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), #111);
+  width: 100%;
+  min-height: 50vh;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
 
-.footer-text,.footer-entities,.footer-contact{
-    display: grid ;
-    justify-items: center ;
-    align-items: center ;
+.footer-text,
+.footer-entities,
+.footer-contact {
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
-.footer-contact ul li{
-    font-weight: 100;
+.footer-contact ul li {
+  font-weight: 100;
 }
 
-
-.footer-entities-grid{
-    display: grid;
-    grid-template-columns: .20fr .4fr .35fr;
-    grid-gap: 20px;
+.footer-entities-grid {
+  display: grid;
+  grid-template-columns: 0.2fr 0.4fr 0.35fr;
+  grid-gap: 20px;
 }
 
-.footer-entity{
-    width: 100%;
-    height: 100%;
+.footer-entity {
+  width: 100%;
+  height: 100%;
 }
 
-.footer-entity img{
-    width: 100%;
-    height: 100%;
-}
-
-
-/*RESPONSIVE*/
-@media screen and (min-width: 800px){
-    .about-text{
-        font-size: .95rem;
-    }
-}
-
-@media screen and (max-width: 900px){
-    .hero-title{
-        font-size: 4vw;
-        transition: 1s;
-    }
-
-    .hero-text{
-        font-size: 2vw;
-        transition: 1s;
-    }
-
-    .about-container{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .about-text{
-        font-size: 2vw;
-    }
-}
-
-@media screen and (max-width: 576px){
-    .hero-title{
-        font-size: 5vw;
-        transition: 1s;
-    }
-
-    .hero-text{
-        font-size: 3vw;
-        transition: 1s;
-    }
-
-    .about-tech-image img{
-        width: 10vw;
-        height: 10vw;
-    }
-
-    .about-title{
-        font-size: 6vw;
-    }
-
-    .about-text{
-        font-size: 3vw;
-    }
-
-   
-}
-
-@keyframes react{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
+.footer-entity img {
+  width: 100%;
+  height: 100%;
 }
