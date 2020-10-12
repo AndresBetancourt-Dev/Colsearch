@@ -9,7 +9,6 @@ async function database() {
       useUnifiedTopology: true,
       useFindAndModify: false,
     });
-    console.log("Database connected");
   } catch (error) {
     console.log(error.message);
   }
