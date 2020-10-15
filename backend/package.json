@@ -1,0 +1,28 @@
+{
+  "name": "colsearch-backend",
+  "version": "1.0.0",
+  "description": "The backend of the Colsearch project, using Node.js, Express.js, JWT and Mongoose.",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon src/index.js"
+  },
+  "keywords": [
+    "Javascript",
+    "Node.js",
+    "Express.js",
+    "JWT"
+  ],
+  "author": "Andrés Betancourt",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
