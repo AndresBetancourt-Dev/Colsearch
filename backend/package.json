@@ -4,6 +4,7 @@
   "description": "The backend of the Colsearch project, using Node.js, Express.js, JWT and Mongoose.",
   "main": "index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "nodemon src/index.js"
   },
   "keywords": [

@@ -11,7 +11,7 @@ MissingPersons.createMissingPerson = async (req, res) => {
       found,
       description,
       imageUrl,
-      neighborhood,
+      contact,
       email,
       location,
     } = req.body;
@@ -31,7 +31,7 @@ MissingPersons.createMissingPerson = async (req, res) => {
       found,
       description,
       imageUrl,
-      neighborhood,
+      contact,
       email,
       location,
     });
@@ -75,7 +75,7 @@ MissingPersons.updateMissingPerson = async (req, res) => {
       found,
       description,
       imageUrl,
-      neighborhood,
+      contact,
       email,
       location,
     } = req.body;
@@ -88,7 +88,7 @@ MissingPersons.updateMissingPerson = async (req, res) => {
       found,
       description,
       imageUrl,
-      neighborhood,
+      contact,
       email,
       location,
     });

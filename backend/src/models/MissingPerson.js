@@ -26,12 +26,14 @@ const missingPersonSchema = new Schema(
       detailed: String,
     },
     imageUrl: String,
-    neighborhood: String,
     contact: String,
     email: String,
     location: {
-      latitude: String,
-      longitude: String,
+      city: String,
+      country: String,
+      neighborhood: String,
+      latitude: Number,
+      longitude: Number,
     },
   },
   {
