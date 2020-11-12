@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import { mapboxAccessToken, mapboxStyles, getMissingPersons } from "./api";
 import missingMarker from "../assets/images/missing.png";
+import "./css/Map.css";
 
 function MapSearch() {
   const [missingPersons, setMissingPersons] = useState([]);
@@ -31,6 +32,7 @@ function MapSearch() {
     >
       {missingPersons.map((missingPerson) => (
         <>
+          {console.log(missingPerson)}
           <Marker
             key={missingPerson._id}
             latitude={missingPerson.location.latitude}
@@ -63,14 +65,32 @@ function MapSearch() {
               }
               anchor="top"
             >
-              <div>
-                <h3>
+              <div className="font-poppins Map-popup">
+                <h3 className="Map-popup-text text-center">
                   {missingPerson.name} {missingPerson.surname}
                 </h3>
                 <p>
-                  <b>Edad:</b> {missingPerson.description.age}
+                  {" "}
+                  <b>Edad </b> : {missingPerson.description.age}
                 </p>
-                <p></p>
+                <p>
+                  <b>Descripción </b> : {missingPerson.description.detailed}
+                </p>
+                <h4 className="text-center">Ubicación</h4>
+                <p>
+                  {" "}
+                  <b>Ciudad </b>: {missingPerson.location.city}
+                </p>
+                <p>
+                  {" "}
+                  <b>País </b> : {missingPerson.location.country}
+                </p>
+                <p>
+                  {" "}
+                  <b>Barrio </b>: {missingPerson.location.neighborhood}
+                </p>
+
+                {}
               </div>
             </Popup>
           ) : null}

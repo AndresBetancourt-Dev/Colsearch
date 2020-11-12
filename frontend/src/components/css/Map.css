@@ -1,0 +1,26 @@
+.mapboxgl-popup-content {
+  background: none !important;
+}
+
+.Map-popup {
+  padding: 1em;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  border: none;
+  border-radius: 1em;
+  color: white;
+  max-width: 370px;
+}
+
+.mapboxgl-popup-close-button {
+  color: white;
+  background: white;
+  top: 20px !important;
+  right: 20px !important;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 500px) {
+  .Map-popup {
+    max-width: 220px;
+  }
+}
