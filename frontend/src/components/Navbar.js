@@ -30,8 +30,8 @@ const Navbar = (props) => {
           </button>
           <div className="collapse navbar-collapse" id="navbar">
             <div className="navbar-nav ml-auto">
-              <Link className="nav-item nav-link active" to="/">
-                Home<span className="sr-only">(current)</span>
+              <Link className="nav-item nav-link" to="/">
+                Home
               </Link>
               <Link className="nav-item nav-link " to="/about">
                 Nosotros

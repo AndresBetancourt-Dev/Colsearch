@@ -15,16 +15,13 @@
 
 .register {
   min-height: 100vh;
-  height: 100%;
+  height: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
-  background-image: url("../../assets/images/register-background.jpeg");
-  background-size: 100% 150%;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 60px 0px;
+  background: linear-gradient(45deg, black, rgba(0, 0, 0, 0.85));
+  padding: 5em 0 22.5em 0px;
 }
 
 .register-item {
@@ -40,6 +37,7 @@
 
 .register-form {
   background: linear-gradient(to top, rgba(0, 0, 0, 1), #111);
+  box-shadow: 1px 1px 2em #222;
   border-radius: 10px;
 }
 
@@ -71,6 +69,12 @@
 
   .register {
     background: url("../../assets/images/register-background-responsive.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .register-form-container {
+    margin-bottom: 10em;
   }
 }
 
@@ -87,10 +91,17 @@
 .register-input {
   background: none;
   border: none;
-  border-bottom: 2px solid white;
+  outline: none;
   color: white;
+  height: 50px;
   width: 100%;
   text-align: center;
+  margin: 0;
+  padding: 0 !important;
+}
+
+textarea.register-input {
+  min-height: 15vh;
 }
 
 .btn-light {

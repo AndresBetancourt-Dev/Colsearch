@@ -13,7 +13,7 @@
 
 .mapboxgl-popup-close-button {
   color: white;
-  background: white;
+  background: transparent;
   top: 20px !important;
   right: 20px !important;
   font-size: 1.5em;

@@ -8,6 +8,7 @@ app.set("port", process.env.PORT || 4000);
 //Middlewares
 app.use(cors());
 app.use(express.json());
+app.use(express.static("images"));
 
 //Routes
 app.use("/api/users", require("./routes/users.routes"));

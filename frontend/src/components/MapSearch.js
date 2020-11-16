@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import { mapboxAccessToken, mapboxStyles, getMissingPersons } from "./api";
 import missingMarker from "../assets/images/missing.png";
@@ -23,12 +23,17 @@ function MapSearch() {
     })();
   }, []);
 
+  const handleViewportChange = useCallback(
+    (newViewport) => setViewport(newViewport),
+    []
+  );
+
   return (
     <ReactMapGL
       {...viewport}
       mapboxApiAccessToken={mapboxAccessToken}
       mapStyle={mapboxStyles}
-      onViewportChange={(nextViewport) => setViewport(nextViewport)}
+      onViewportChange={handleViewportChange}
     >
       {missingPersons.map((missingPerson) => (
         <>
