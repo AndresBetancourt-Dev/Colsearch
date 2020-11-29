@@ -1,0 +1,44 @@
+[33mcommit f2793c2a7a3dfc506ac4c3e8cadac04a54fa1cf5[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: miguelhat09 <miguelangel_hsg@hotmail.com>
+Date:   Fri Sep 11 14:58:59 2020 -0500
+
+    update 2
+
+[33mcommit e4dff8ffa243462013c230e08637016d586c0e79[m
+Author: miguelhat09 <miguelangel_hsg@hotmail.com>
+Date:   Wed Sep 2 18:31:49 2020 -0500
+
+    pagina de login y adminstracion como prototipo
+
+[33mcommit d04678f1c6ed59c9ecbbe2420b9c0c0595cef1b9[m
+Merge: 1563a3c 824524e
+Author: Andrés David Betancourt Santana <65095693+AndresBetancourt-Dev@users.noreply.github.com>
+Date:   Wed Sep 2 18:16:54 2020 -0500
+
+    Merge pull request #1 from kevins29/master
+    
+    Landing Page, register views placeholder
+
+[33mcommit 824524e623d2df1be1ac194a2b2109c88217ae1e[m
+Author: kevins29 <63414462+kevins29@users.noreply.github.com>
+Date:   Wed Sep 2 18:15:41 2020 -0500
+
+    Landing Page, register views placeholder
+
+[33mcommit 1563a3c4d8c5d31724b9e3de886e47657eda66a5[m
+Author: AndresBetancourt-Dev <contacto.betancourth@gmail.com>
+Date:   Wed Sep 2 17:57:47 2020 -0500
+
+    Added HTML folder for adding  other companions work
+
+[33mcommit 5a897e80e96e4ddd68766d1714d08d0b37a50fe7[m
+Author: AndresBetancourt-Dev <contacto.betancourth@gmail.com>
+Date:   Sun Aug 23 17:30:56 2020 -0500
+
+    Added logo,font and pallete ideas svg's
+
+[33mcommit 0ff29a6aed872710bd2db665c75dd8fa28915d46[m
+Author: Andrés David Betancourt Santana <65095693+AndresBetancourt-Dev@users.noreply.github.com>
+Date:   Sun Aug 23 16:43:24 2020 -0500
+
+    Initial commit
