@@ -1,3 +1,5 @@
+import Axios from "axios";
+
 export const mapboxAccessToken =
   "pk.eyJ1IjoiYW5kcmVzYmV0YW5jb3VydCIsImEiOiJja2V6eWxvbGQwZzh3MnlsYzZ0azBtM3huIn0.JybMBeDUjT8F9oGXG3OdFg";
 
@@ -6,7 +8,7 @@ export const openCageKey = "a84e92a0a4764a5e982e2ac79bd916f5";
 export const mapboxStyles =
   "mapbox://styles/andresbetancourt/ckezzu9bg0efh19rx436mua8o";
 
-const API_URL = "https://colsearch-backend.herokuapp.com/api/";
+export const API_URL = "https://colsearch-backend.herokuapp.com/api/";
 
 export async function getMissingPersons() {
   const response = await fetch(`${API_URL}missing`);
@@ -44,4 +46,14 @@ export const getCityAndCountry = async (latitude, longitude) => {
   };
 
   return locationInformation;
+};
+
+export const login = async (username, password) => {
+  try {
+    const user = { username, password };
+    const loginResponse = await Axios.post(`${API_URL}users/login`, user);
+    return loginResponse;
+  } catch (error) {
+    return null;
+  }
 };

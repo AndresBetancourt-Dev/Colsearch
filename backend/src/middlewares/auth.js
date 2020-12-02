@@ -8,13 +8,14 @@ const auth = async (req, res, next) => {
         .status(401)
         .json({ message: "No Authentication Token,  Authorization denied" });
     }
-
     const isVerified = await jwt.verify(token, process.env.JWT_SECRET);
     if (!isVerified) {
       return res
         .status(401)
         .json({ message: "Token Verification Failed, Authorization Denied" });
     }
+
+    req.user = isVerified;
 
     next();
   } catch (error) {

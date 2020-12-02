@@ -1,0 +1,47 @@
+.error {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-content {
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-message {
+  padding: 1em;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.error-button {
+  background-color: white;
+  color: black;
+  font-family: "Poppins";
+  transition: 0.3s ease-in;
+  padding: 1em 3em;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}
+
+.error-button:hover {
+  transform: scale(1.1, 1.1);
+  background-color: rgb(27, 27, 27);
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .error-content {
+    width: 80%;
+  }
+}

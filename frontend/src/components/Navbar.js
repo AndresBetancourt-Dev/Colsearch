@@ -33,13 +33,13 @@ const Navbar = (props) => {
               <Link className="nav-item nav-link" to="/">
                 Home
               </Link>
-              <Link className="nav-item nav-link " to="/about">
+              <Link className="nav-item nav-link " to="/nosotros">
                 Nosotros
               </Link>
-              <Link className="nav-item nav-link" to="/map">
+              <Link className="nav-item nav-link" to="/mapa">
                 Mapa
               </Link>
-              <Link className="nav-item nav-link" to="/register">
+              <Link className="nav-item nav-link" to="/registro">
                 Registro
               </Link>
               <a className="nav-item nav-link" href="#contact">

@@ -1,10 +1,15 @@
 import React from "react";
 import RegisterForm from "../components/RegisterForm";
 import "./css/Register.css";
+import { setWindowTop } from "../helpers/Window";
 import { MissingPersonProvider } from "../context/MissingPersonContext";
 import MapRegister from "../components/MapRegister";
+import { useEffect } from "react";
 
 const Register = (props) => {
+  useEffect(() => {
+    setWindowTop();
+  }, []);
   return (
     <MissingPersonProvider>
       <div className="register">

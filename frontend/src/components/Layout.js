@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import LoginToggle from "./LoginToggle";
 
 const Layout = (props) => {
   return (
@@ -8,6 +9,7 @@ const Layout = (props) => {
       <Navbar />
       {props.children}
       <Footer />
+      <LoginToggle />
     </React.Fragment>
   );
 };

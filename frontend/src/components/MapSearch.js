@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { useState, useEffect, useCallback } from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import { mapboxAccessToken, mapboxStyles, getMissingPersons } from "./api";
@@ -9,7 +9,7 @@ function MapSearch() {
   const [missingPersons, setMissingPersons] = useState([]);
   const [showPopUp, setShowPopUp] = useState({});
   const [viewport, setViewport] = useState({
-    width: "100vw",
+    width: "100%",
     height: "100vh",
     latitude: 4.570868,
     longitude: -74.297333,
@@ -17,16 +17,16 @@ function MapSearch() {
   });
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     (async () => {
       const missingPersons = await getMissingPersons();
       setMissingPersons(missingPersons);
     })();
   }, []);
 
-  const handleViewportChange = useCallback(
-    (newViewport) => setViewport(newViewport),
-    []
-  );
+  const handleViewportChange = useCallback((newViewport) => {
+    setViewport({ ...newViewport, width: "100%" });
+  }, []);
 
   return (
     <ReactMapGL
@@ -36,10 +36,8 @@ function MapSearch() {
       onViewportChange={handleViewportChange}
     >
       {missingPersons.map((missingPerson) => (
-        <>
-          {console.log(missingPerson)}
+        <Fragment key={missingPerson._id}>
           <Marker
-            key={missingPerson._id}
             latitude={missingPerson.location.latitude}
             longitude={missingPerson.location.longitude}
           >
@@ -94,12 +92,11 @@ function MapSearch() {
                   {" "}
                   <b>Barrio </b>: {missingPerson.location.neighborhood}
                 </p>
-
                 {}
               </div>
             </Popup>
           ) : null}
-        </>
+        </Fragment>
       ))}
     </ReactMapGL>
   );

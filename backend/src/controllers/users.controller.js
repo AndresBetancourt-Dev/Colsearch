@@ -164,4 +164,12 @@ Users.validToken = async (req, res) => {
   }
 };
 
+Users.getUserData = async (req, res) => {
+  const user = await User.findById(req.user.id);
+  res.json({
+    name: user.name,
+    id: user._id,
+  });
+};
+
 module.exports = Users;

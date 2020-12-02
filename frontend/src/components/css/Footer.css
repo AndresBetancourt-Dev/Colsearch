@@ -13,8 +13,8 @@
 .footer-text,
 .footer-entities,
 .footer-contact {
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -24,7 +24,9 @@
 
 .footer-entities-grid {
   display: grid;
-  grid-template-columns: 0.2fr 0.4fr 0.35fr;
+  grid-template-columns: 0.2fr 0.425fr 0.425fr;
+  justify-items: center;
+  align-items: center;
   grid-gap: 20px;
 }
 

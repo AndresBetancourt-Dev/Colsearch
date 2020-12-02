@@ -33,11 +33,12 @@
 }
 
 .hero-title {
-  font-weight: 300;
+  font-weight: 700;
+  font-size: 4em;
 }
 
 .hero-text {
-  font-weight: 300;
+  font-weight: 700;
 }
 
 .btn {

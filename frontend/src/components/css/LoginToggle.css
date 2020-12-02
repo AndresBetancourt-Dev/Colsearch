@@ -1,0 +1,8 @@
+.login-toggle {
+  width: 100%;
+  display: flex;
+  padding-right: 1em;
+  justify-content: flex-end;
+  background-color: black;
+  color: white;
+}

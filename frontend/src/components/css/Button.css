@@ -1,0 +1,36 @@
+.button {
+  background-color: white;
+  color: black;
+  font-family: "Poppins";
+  transition: 0.3s ease-in;
+  padding: 1em 3em;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}
+
+.button:hover {
+  transform: scale(1.025, 1.025);
+  background-color: rgb(27, 27, 27);
+  color: white;
+  text-decoration: none;
+}
+
+.button-inverted {
+  padding: 1em 3em;
+  font-weight: 700;
+  background-color: rgb(27, 27, 27);
+  font-family: "Poppins";
+  transition: 0.3s ease-in;
+  color: white;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+}
+
+.button-inverted:hover {
+  transform: scale(1.025, 1.025);
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}

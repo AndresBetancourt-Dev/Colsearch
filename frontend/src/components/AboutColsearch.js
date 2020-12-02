@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 const AboutColsearch = () => {
   return (
@@ -11,13 +12,10 @@ const AboutColsearch = () => {
           Ayuda con la problemática de las personas desaparecidas, para que sus
           seres queridos y amigos puedan saber el último paradero de la persona
           que buscan, la última vez donde fueron vistos y detalles que indiquen
-          pistas sobre su paradero a los demás para ayudar en la búsqueda. Hacer
-          viral a la persona desaparecida para que sea más fácil localizarla por
-          medio de la aplicación e integración con redes sociales.
+          pistas sobre su paradero a los demás para ayudar en la búsqueda. Todo
+          esto gracias a un Mapa Interactivo.
         </div>
-
         <h3 className="text-center  font-poppins"> ¿Qué hace?</h3>
-
         <div className="p-3  font-poppins">
           <ul>
             <li> Búsqueda de personas desaparecidas.</li>
@@ -29,6 +27,7 @@ const AboutColsearch = () => {
             <li>Difusión de datos de la persona desaparecida.</li>
           </ul>
         </div>
+        <Button to={"/mapa"} text={"Mapa"} />
       </div>
     </div>
   );

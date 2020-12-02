@@ -2,6 +2,7 @@ import React, { useCallback, useContext } from "react";
 import { MissingPersonContext } from "../context/MissingPersonContext";
 import Accordion from "./Accordion";
 import { validateFullRegisterInformation } from "../helpers/Validations";
+import Button from "./Button";
 import swal from "sweetalert";
 import { registerMissingPerson } from "./api";
 import { useHistory } from "react-router-dom";
@@ -328,12 +329,7 @@ const RegisterForm = (props) => {
             </div>
           </div>
         </Accordion>
-        <button
-          className="btn btn-block btn-light font-poppins"
-          onClick={sendInformation}
-        >
-          Enviar
-        </button>
+        <Button onClick={sendInformation} text="Enviar"></Button>
       </div>
     </form>
   );

@@ -8,12 +8,18 @@ const {
   deleteUser,
   loginUser,
   validToken,
+  getUserData,
 } = require("../controllers/users.controller");
 
 const auth = require("../middlewares/auth");
-router.route("/").get(getUsers).post(createUser);
+router.route("/").get(auth, getUsers).post(auth, createUser);
 router.route("/login").post(loginUser);
 router.route("/validToken").post(validToken);
-router.route("/:id").get(getUserById).put(updateUser).delete(auth, deleteUser);
+router.route("/getUser").get(auth, getUserData);
+router
+  .route("/:id")
+  .get(auth, getUserById)
+  .put(auth, updateUser)
+  .delete(auth, deleteUser);
 
 module.exports = router;
